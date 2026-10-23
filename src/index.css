@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-gothic {
+    font-family: 'Cinzel', serif;
+  }
+  .font-chanson {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  .font-poster {
+    font-family: 'Russo One', sans-serif;
+  }
+  .font-classic {
+    font-family: 'Marcellus', serif;
+  }
+  
+  .gold-gradient-text {
+    background: linear-gradient(135deg, #fff3a1 0%, #ffd700 25%, #d4af37 50%, #996515 75%, #f7e692 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .gold-border {
+    border-image: linear-gradient(to bottom right, #ffd700, #996515, #ffd700) 1;
+  }
+  
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s ease-in-out infinite;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Залетел распил — Ультрамарин Шансон",
+  "description": "Обложка и музыкальный плеер альбома «Залетел распил» в стиле русский шансон и Warhammer 40K с полным трек-листом и текстами песен.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
